@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+#change-quote {
+    height: 25px;
+    width: 100px;
+    margin: 0 350px;
+    background: #fff;
+    border-radius: 15px;
+}
