@@ -4,42 +4,54 @@
 
 //might be able to make all the variables an object with a background color or album cover associated with the background of each quote
 
-var allQuotes = [];
+var allQuotes = ["Difficult takes a day, impossible takes a week", "A loss ain't a loss it's a lesson, appreciate the pain it's a blessing.", "Chains is cool to cop, but more important is lawyer fees."]
+var allQuotes2 = []
 
-var quote1 = {
+    quote1 = {
     quote: "Difficult takes a day, impossible takes a week",
-    album: "Late Registration",
-    displayQuote: function() {
-        return "Difficult takes a day, impossible takes a week";
+    // album: "Late Registration",
     }
-};
-var quote2 = {
+    quote2 = {
     quote: "A loss ain't a loss it's a lesson, appreciate the pain it's a blessing.",
-    album: "4:44"
-};
-var quote3 = {
+    // album: "4:44"
+    }
+    quote3 = {
     quote: "Chains is cool to cop, but more important is lawyer fees.",
-    album: "Reasonable Doubt"
-};
+    // album: "Reasonable Doubt"
+    }
+
 
 //push all variables containing quotes to allQuotes array here
-allQuotes.push(quote1);
-allQuotes.push(quote2);
-allQuotes.push(quote3);
+// allQuotes2.push(quote1);
+// allQuotes2.push(quote2);
+// allQuotes2.push(quote3);
 
 //randomly selects an index in allQuotes
-var scramble = allQuotes[Math.floor(Math.random() * allQuotes.length)];
-var newQuote = function() {
-document.addEventListener("click", console.log(scramble))
+function scramble() {
+    // for (i = 0; i < allQuotes.length; i++) {
+        let random = (Math.floor(Math.random() * allQuotes.length))
+        let newQuote = allQuotes[random]
+        console.log(allQuotes[random])
+    // }
 }
-newQuote();
+    
+    let rando = (Math.floor(Math.random() * allQuotes.length))
+    let jay = allQuotes[rando]
 
 
 //displays quote to html document
-var displayQuote = function() {
-    var showQuote = document.createElement("block-quote");
-    document.getElementsByClassName("display-quote")[0].textContent = quote1.quote;
-    document.getElementsByClassName("display-quote");
+// function displayQuote () {
+//     var showQuote = document.createElement("block-quote")
+//     document.getElementsByClassName("display-quote")[0].textContent = jay
+// }
+
+function displayQuote () {
+    var newQuote = document.getElementById('change-quote')
+    newQuote.addEventListener('click', function () {
+        var showQuote = document.createElement("block-quote")
+        document.getElementsByClassName("display-quote")[0].textContent = jay
+        console.log(jay)
+    })
 }
 
 displayQuote();

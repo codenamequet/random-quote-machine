@@ -13,4 +13,6 @@ h1 {
     background: blue;
     text-align: center;
     margin-bottom: 20px;
+    height: 225px;
+    padding-top: 200px;
 }
