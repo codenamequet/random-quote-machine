@@ -34,7 +34,7 @@ var changeQuote = document.getElementById('change-quote')
 changeQuote.addEventListener('click', function () {
     var changeQuote = allQuotes[Math.floor(Math.random() * allQuotes.length)];
     document.getElementsByClassName('display-quote')[0].textContent = changeQuote.text
-    // document.getElementsByClassName('display-quote')[0].style.backgroundImage = changeQuote.img
+    document.getElementsByClassName('display-quote')[0].style.backgroundImage = changeQuote.img
 })
 })()
 
