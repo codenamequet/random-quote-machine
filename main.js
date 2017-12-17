@@ -11,7 +11,7 @@
     {
     text: '"Difficult takes a day, impossible takes a week"',
     album: "Late Registration",
-    img: "url('https://upload.wikimedia.org/wikipedia/commons/a/ac/4-44_album_cover.png')"
+    img: "url('http://images.genius.com/20be4a5ccc57daf3577b7e0d12f092f8.1000x1000x1.jpg')"
     },
     {
     text: '"A loss ain\'t a loss it\'s a lesson, appreciate the pain it\'s a blessing."',
@@ -32,10 +32,10 @@
 
 var changeQuote = document.getElementById('change-quote')
 changeQuote.addEventListener('click', function () {
-    var changeQuote = allQuotes[Math.floor(Math.random() * allQuotes.length)];
-    document.getElementsByClassName('display-quote')[0].textContent = changeQuote.text
+    var changeQuote = allQuotes[Math.floor(Math.random() * allQuotes.length)]
+    document.getElementsByClassName('display-quote')[0].innerHTML = changeQuote.text + "<br />" + "- " + changeQuote.album
     document.getElementsByClassName('display-quote')[0].style.backgroundImage = changeQuote.img
 })
 })()
 
-document.getElementsByClassName("display-quote")[0].textContent = 'Click the "Change Quote" button below to view quotes'
+document.getElementsByClassName("display-quote")[0].textContent = 'Random Jay-Z Quote Machine'
