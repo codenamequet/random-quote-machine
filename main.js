@@ -39,7 +39,7 @@
     {
     text: '"Some things you can\'t escape: death, taxes, and a race-ist (racist) society that make every nigga feel like a candidate, for a Trayvon kinda fate. Even when your crib sit on a lake, even when your plaques hang on a wall, even when the President jam your tape."',
     album: "4 Your Eyez Only",
-    img: "urlhttps://upload.wikimedia.org/wikipedia/en/b/bb/J._Cole_%E2%80%94_4_Your_Eyez_Only_album_cover.jpg)",
+    img: "url(https://upload.wikimedia.org/wikipedia/en/b/bb/J._Cole_%E2%80%94_4_Your_Eyez_Only_album_cover.jpg)",
     song: "Neighbors",
     artist: 'J. Cole'
     },
@@ -97,7 +97,7 @@
     artist: 'Lauryn Hill',
     song: 'Everything is Everything',
     album: 'The Miseducation of Lauren Hill',
-    img: 'url(https://img.discogs.com/26mQhh59Tgk-hYiz28sBUHDayP8=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3719597-1468458485-7555.jpeg.jpg)'
+    img: 'url(https://upload.wikimedia.org/wikipedia/en/5/55/LaurynHillTheMiseducationofLaurynHillalbumcover.jpg)'
     },
     {
     text: '"Don\'t cry, dry your eyes, never let up. Forgive but don\'t forget, girl, keep your head up."',
